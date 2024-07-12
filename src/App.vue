@@ -1,9 +1,12 @@
 <template>
   <div>
-    
+    <TodosComponent />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TodosComponent from './components/TodosComponent.vue';
+
+</script>
 
 <style scoped></style>
