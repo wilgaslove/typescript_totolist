@@ -10,6 +10,7 @@
 import TodoHeader from './TodoHeader.vue';
 import TodoMain from './TodoMain.vue';
 import TodoFooter from './TodoFooter.vue';
+import type {todolis}
 
 interface Todo  {
     id: number,

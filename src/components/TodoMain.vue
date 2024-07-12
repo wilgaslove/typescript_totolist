@@ -1,7 +1,10 @@
 <template>
     <main class="main"> 
         <ul class="todo-list">
-            <li v-for="todo in taches" :key="todo.id">
+            <div>
+                <input type="text">
+            </div>
+            <li :class="{ completed: todo.complete}" v-for="todo in taches" :key="todo.id">
                 {{ todo.title }}
             </li>
         </ul>
@@ -10,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+import type { Todo } from '@/@types';
 
 interface Todo  {
     id: number,
